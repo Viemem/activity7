@@ -13,8 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('cursos', function (Blueprint $table) {
-            $table->id();
+        Schema::create('curso', function (Blueprint $table) {
+            $table->id('ID');
+            $table->char('LlaveCurso', 20);
+            $table->char('KitRobotica', 20);
+            $table->char('NombreCurso', 20);
             $table->timestamps();
         });
     }
