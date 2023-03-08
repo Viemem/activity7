@@ -13,9 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('estudiante', function (Blueprint $table) {
+        Schema::create('estudiantes', function (Blueprint $table) {
             $table->id('ID');
-            $table->bigInteger('Curso');
             $table->foreignId('Grupo');
             $table->timestamps();
         });
